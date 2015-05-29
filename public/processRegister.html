@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="foodle.css">
+		<title>Registration</title>
+	</head>
+	
+	<body class="centered">
+		<header>
+			<img src="logo.png" alt="Logo">
+		</header>
+		
+		<nav class="top">
+            <a href="./processLogin.html">Login</a>
+		</nav>
+		
+		<form action="/bin/processRegister" method="post">
+			<div class="table">
+
+				<div class="table-row">
+				    <div class="table-cell">
+						<label for="username">Username:</label>
+				    </div>
+					<div class="table-cell">
+						<input type="text" name="user" id="user">
+					</div>
+				</div>
+
+				<div class="table-row">
+				    <div class="table-cell">
+						<label for="password">Password:</label>
+					</div>
+				    <div class="table-cell">
+						<input type="password" name="password"  id="password">
+					</div>	
+				</div>
+				<div class="table-row">
+					<div class="table-cell">
+						<label for="birthday">Birthday:</label>
+					</div>
+					<div class="table-cell">
+						<input  type="date" name="birthday" id="birthday" required min="1884-10-02" max="2001-10-02">
+					</div>
+				</div>
+			
+				<div class="table-row">
+					<div class="table-cell">
+						<label for="email">Email address:</label>
+					</div>
+					<div class="table-cell">
+						<input type="email" name="email" id="email" required pattern="[^@]*@[^.]+\..+">
+					</div>
+				</div>
+
+			</div>
+			<p><input type="submit" value="Register"></p>
+			</form>
+		</article>
+		
+		<footer>
+            <small>Copyright &copy; 2014</small>
+        </footer>
+	</body>
+</html>
